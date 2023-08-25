@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Rezultat">
+
+    <ImageView
+        android:id="@+id/felicitari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="250dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/felicitari"
+        />
+
+    <TextView
+        android:id="@+id/mesajdefinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/felicitari"
+        android:text="Ai terminat testul !"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mesajdefinal"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/raspunsuricorecte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raspunsuri corecte : 0"
+            android:textColor="#00C853"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/raspunsuriincorecte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:text="Raspunsuri incorecte : 0"
+            android:textColor="#DD2C00"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/butonrestart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Incepe test nou"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/butonstartgalben"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+
+        />
+</RelativeLayout>
